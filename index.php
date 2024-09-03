@@ -1,7 +1,7 @@
 <?php
 // Index
 $cake=["choco","vanilla","strawberry"];
-// echo $cake[1];
+// /echo $cake[1];
 $cake[0]= "chocolate";
 array_push($cake, "blueberry");
 array_push($cake, "caramel");
@@ -31,8 +31,31 @@ $students= [
     ["name"=>"David Izuchukwu Charles","matric_no"=>"VUG/SEN/23/8837","course"=>"Software Engineering","admission_type"=>"direct_entry","faculty"=>"engineering","year_registered"=>"2023","fee_status"=>"10/10/2006"],
     ["name"=>"Ezehi Theddy Lome","matric_no"=>"VUG/SEN/23/8867","course"=>"Software Engineering","admission_type"=>"direct_entry","faculty"=>"engineering","year_registered"=>"2023","fee_status"=>"10/10/2006"],
 ];
+// print_r($students);
 
-print_r($students);
+// Conditional statements
+$total_score= 79;
+if ($total_score >= 80) {
+    echo "Grade A";
+}
+elseif ($total_score>= 70) {
+    echo "Grade B";
+}
+elseif ($total_score>= 60) {
+    echo "Grade c";
+}
+elseif ($total_score>= 40) {
+    echo "Grade D";
+}
+elseif ($total_score<= 39) {
+    echo "Grade F";
+}
+else{
+    echo "Error";
+}
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
