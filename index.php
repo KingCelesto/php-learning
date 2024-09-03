@@ -1,10 +1,7 @@
 <?php
 // Index
-$cake=["choco","vanilla","strawberry"];
-// /echo $cake[1];
+$cakes=["choco","vanilla","strawberry","blueberry","red_velvet"];
 $cake[0]= "chocolate";
-array_push($cake, "blueberry");
-array_push($cake, "caramel");
 array_push($cake, "apple");
 $choco_cake=[
     "full_name"=>"Chocolate Cake",
@@ -34,26 +31,43 @@ $students= [
 // print_r($students);
 
 // Conditional statements
-$total_score= 79;
-if ($total_score >= 80) {
-    echo "Grade A";
-}
-elseif ($total_score>= 70) {
-    echo "Grade B";
-}
-elseif ($total_score>= 60) {
-    echo "Grade c";
-}
-elseif ($total_score>= 40) {
-    echo "Grade D";
-}
-elseif ($total_score<= 39) {
-    echo "Grade F";
-}
-else{
-    echo "Error";
-}
+// $total_score= 40;
+// if ($total_score >= 80) {
+//     echo "Grade A";
+// }
+// elseif ($total_score>= 70) {
+//     echo "Grade B";
+// }
+// elseif ($total_score>= 60) {
+//     echo "Grade c";
+// }
+// elseif ($total_score>= 40) {
+//     echo "Grade D";
+// }
+// elseif ($total_score<= 39) {
+//     echo "Grade F";
+// }
+// else{
+//     echo "Error";
+// }
 
+// For Loop
+for ($a=0; $a <= 25 ; $a++) {
+    // echo "VUG/SEN/24/111$a".'</br>';
+}
+// For Each Loop
+foreach ($cakes as $cake) {
+    // echo $cake.'</br>';
+}
+foreach ($student as $stud) {
+    // echo $stud.'</br>';
+}
+foreach ($students as $studs) {
+    // print_r($studs).'</br>';
+}
+foreach ($students as $studs) {
+    echo $studs["name"].'</br>';
+}
 
 
 ?>
@@ -91,6 +105,11 @@ else{
                         </p>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+
             </div>
         </div>
     </div>
