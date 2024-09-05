@@ -91,6 +91,9 @@
             'grade' => 'A'
         ]
     ];
+    function reg_no($reg_no= "empty"){
+        
+    }
 ?>
 
 
@@ -102,21 +105,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>php</title>
     <link rel="stylesheet" href="css/materialize.css">
-    <style></style>
+    <style>
+
+    </style>
 </head>
 <body>
     <div class="container">
+        <h1 class="center-align green-text">STUDENT ELECTIVES</h1>
         <?php foreach ($students_elective as $students) {
             ?>
             <table class="striped">
                 <thead>
                     <tr>
                         <th>Student Name</th>
-                        <th>Reg_no</th>
-                        <th>Test_score</th>
-                        <th>Attendance_score</th>
-                        <th>Exam_score</th>
-                        <th>Total_score</th>
+                        <th>Reg no</th>
+                        <th>Test score</th>
+                        <th>Attendance score</th>
+                        <th>Exam score</th>
+                        <th>Total score</th>
                         <th>Grade</th>
                     </tr>
                 </thead>
@@ -127,9 +133,9 @@
                         <td><?php echo $students['reg_no'. rand(100, 200)]; ?></td>
                         <td><?php echo $students['test_score']; ?></td>
                         <td><?php echo $students['attendance_score']; ?></td>
-                        <td><?php echo $students['']; ?></td>
-                        <td><?php echo $students['student_name']; ?></td>
-                        <td><?php echo $students['student_name']; ?></td>
+                        <td><?php echo $students['exam_score']; ?></td>
+                        <td><?php echo $students['total_score']; ?></td>
+                        <td><?php echo $students['grade']; ?></td>
                     </tr>
                     <tr>
                         
@@ -155,7 +161,6 @@
                     <tr>
                         
                     </tr>
-                    
             </table>
         <?php } ?>
     </div>
