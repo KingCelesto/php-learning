@@ -1,119 +1,165 @@
 <?php
-// Index
-$cakes=["choco","vanilla","strawberry","blueberry","red_velvet"];
-$cake[0]= "chocolate";
-array_push($cake, "apple");
-$choco_cake=[
-    "full_name"=>"Chocolate Cake",
-    "bake_time"=>"25",
-    "ingredients"=>"cocoa, sugar, flour, butter, milk",
-    "likes"=>"258",
-];
-$choco_cake ["date_created"]="02/09/2024";
-// print_r($cake);
-// print_r($choco_cake);
-// echo $choco_cake["ingredients"];
-
-$student= [
-    "full_name"=>"Uche Emeka Brendan",
-    "matric_no"=>"VUG/SEN/23/8837",
-    "course"=>"Software Engineering",
-    "admission_type"=>"direct_entry",
-    "faculty"=>"engineering",
-    "year_registered"=>"2023",
-    "fee_status"=>"10/10/2006",
-];
-$students= [
-    ["name"=>"Uche Emeka Brendan","matric_no"=>"VUG/SEN/23/10607","course"=>"Software Engineering","admission_type"=>"direct_entry","faculty"=>"engineering","year_registered"=>"2023","fee_status"=>"10/10/2006"],
-    ["name"=>"David Izuchukwu Charles","matric_no"=>"VUG/SEN/23/8837","course"=>"Software Engineering","admission_type"=>"direct_entry","faculty"=>"engineering","year_registered"=>"2023","fee_status"=>"10/10/2006"],
-    ["name"=>"Ezehi Theddy Lome","matric_no"=>"VUG/SEN/23/8867","course"=>"Software Engineering","admission_type"=>"direct_entry","faculty"=>"engineering","year_registered"=>"2023","fee_status"=>"10/10/2006"],
-];
-// print_r($students);
-
-// Conditional statements
-// $total_score= 40;
-// if ($total_score >= 80) {
-//     echo "Grade A";
-// }
-// elseif ($total_score>= 70) {
-//     echo "Grade B";
-// }
-// elseif ($total_score>= 60) {
-//     echo "Grade c";
-// }
-// elseif ($total_score>= 40) {
-//     echo "Grade D";
-// }
-// elseif ($total_score<= 39) {
-//     echo "Grade F";
-// }
-// else{
-//     echo "Error";
-// }
-
-// For Loop
-for ($a=0; $a <= 25 ; $a++) {
-    // echo "VUG/SEN/24/111$a".'</br>';
-}
-// For Each Loop
-foreach ($cakes as $cake) {
-    // echo $cake.'</br>';
-}
-foreach ($student as $stud) {
-    // echo $stud.'</br>';
-}
-foreach ($students as $studs) {
-    // print_r($studs).'</br>';
-}
-foreach ($students as $studs) {
-    echo $studs["name"].'</br>';
-}
-
-
+    $students_elective = [
+        [
+            'student_name' => 'Daan de Vries',
+            'reg_no' => ' ',
+            'test_score' => 18,
+            'attendance_score' => 7,
+            'exam_score' => 65,
+            'total_score' => 90,
+            'grade' => 'A'
+        ],
+        [
+            'student_name' => 'Sophie Janssen',
+            'reg_no' => ' ',
+            'test_score' => 15,
+            'attendance_score' => 8,
+            'exam_score' => 60,
+            'total_score' => 83,
+            'grade' => 'B'
+        ],
+        [
+            'student_name' => 'Thomas Bakker',
+            'reg_no' => ' ',
+            'test_score' => 14,
+            'attendance_score' => 9,
+            'exam_score' => 55,
+            'total_score' => 78,
+            'grade' => 'B'
+        ],
+        [
+            'student_name' => 'Emma de Jong',
+            'reg_no' => ' ',
+            'test_score' => 19,
+            'attendance_score' => 6,
+            'exam_score' => 70,
+            'total_score' => 95,
+            'grade' => 'A'
+        ],
+        [
+            'student_name' => 'Lars van Dijk',
+            'reg_no' => ' ',
+            'test_score' => 12,
+            'attendance_score' => 8,
+            'exam_score' => 50,
+            'total_score' => 70,
+            'grade' => 'C'
+        ],
+        [
+            'student_name' => 'Julia Visser',
+            'reg_no' => ' ',
+            'test_score' => 17,
+            'attendance_score' => 7,
+            'exam_score' => 60,
+            'total_score' => 84,
+            'grade' => 'B'
+        ],
+        [
+            'student_name' => 'Milan de Bruijn',
+            'reg_no' => ' ',
+            'test_score' => 13,
+            'attendance_score' => 9,
+            'exam_score' => 58,
+            'total_score' => 80,
+            'grade' => 'B'
+        ],
+        [
+            'student_name' => 'Lotte Willems',
+            'reg_no' => ' ',
+            'test_score' => 18,
+            'attendance_score' => 8,
+            'exam_score' => 68,
+            'total_score' => 94,
+            'grade' => 'A'
+        ],
+        [
+            'student_name' => 'Bram van der Berg',
+            'reg_no' => ' ',
+            'test_score' => 11,
+            'attendance_score' => 6,
+            'exam_score' => 45,
+            'total_score' => 62,
+            'grade' => 'D'
+        ],
+        [
+            'student_name' => 'Noor Smits',
+            'reg_no' => ' ',
+            'test_score' => 19,
+            'attendance_score' => 9,
+            'exam_score' => 70,
+            'total_score' => 98,
+            'grade' => 'A'
+        ]
+    ];
 ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>php</title>
     <link rel="stylesheet" href="css/materialize.css">
-    <style>
-        .card-content{
-            justify-content: space-between;
-        }
-    </style>
+    <style></style>
 </head>
 <body>
-    
     <div class="container">
-        <div class="row">
-            <h1>STUDENT DETAILS</h1>
-            <div class="col s12 l4">
-                <div class="card">
-                    <div class="card-content">
-                        <span class="card-title green-text darken-3 activator">Welcome, <span style="text-decoration: underline;" ><?php echo $student['full_name'] ?></span></span>
-                        <p class="card-title black-text"><?php echo $student['matric_no'] ?></p>
-                        <p class="card-title black-text">Course of study:- <?php echo $student['course'] ?></p>
-                        <p class="card-title black-text">Faculty:- <?php echo $student['faculty'] ?></p>
-                        <p class="card-title black-text">Payment status:- <?php echo $student['fee_status'] ?></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title green-text darken-3">close</span>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos, nemo?
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12 l4">
+        <?php foreach ($students_elective as $students) {
+            ?>
+            <table class="striped">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Reg_no</th>
+                        <th>Test_score</th>
+                        <th>Attendance_score</th>
+                        <th>Exam_score</th>
+                        <th>Total_score</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
 
-            </div>
-        </div>
+                <tbody>
+                    <tr>
+                        <td><?php echo $students['student_name']; ?></td>
+                        <td><?php echo $students['reg_no'. rand(100, 200)]; ?></td>
+                        <td><?php echo $students['test_score']; ?></td>
+                        <td><?php echo $students['attendance_score']; ?></td>
+                        <td><?php echo $students['']; ?></td>
+                        <td><?php echo $students['student_name']; ?></td>
+                        <td><?php echo $students['student_name']; ?></td>
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                    
+            </table>
+        <?php } ?>
     </div>
-<script src="js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
     <script src="js/materialize.js"></script>
     <script>
         $(document).ready(function(){
